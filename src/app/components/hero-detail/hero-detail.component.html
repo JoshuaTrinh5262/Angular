@@ -1,9 +1,29 @@
-<p>{{ title }}</p>
-<!-- <div *ngIf="hero">
+<div class="hero-detail" *ngIf="hero">
     <h2>{{hero.name | uppercase}} Details</h2>
     <div><span>id: </span>{{hero.id}}</div>
     <div>
-      <label for="hero-name">Hero name: </label>
+      <label for="hero-name">Hero Name: </label>
       <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
     </div>
-</div> -->
+    <div>
+      <label for="hero-gender">Hero Gender: </label>
+      <select name="hero-gender" id="hero-gender"  [(ngModel)]="hero.gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <div>
+      <label for="hero-age">Hero Age: </label>
+      <input id="hero-age" type="number" step="1" [(ngModel)]="hero.age" placeholder="age">
+    </div>
+    <div>
+      <label for="hero-power">Hero Power: </label>
+      <input id="hero-power" [(ngModel)]="hero.power" placeholder="power">
+    </div>
+    <div>
+      <label for="hero-rank">Hero Rank: </label>
+      <input id="hero-rank" [(ngModel)]="hero.rank" placeholder="power">
+    </div>
+</div>
+<hero-messages></hero-messages>
+<button type="button" (click)="goBack()">go back</button>

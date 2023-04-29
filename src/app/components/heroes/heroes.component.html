@@ -1,1 +1,12 @@
-<p>heroes works!</p>
+<div class="hero-list">
+  <h2>My Heroes List</h2>
+  <hero-messages></hero-messages>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/hero-detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span>
+        <span class="name">{{hero.name}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

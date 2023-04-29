@@ -1,16 +1,18 @@
-<p>{{ title }}</p>
-<button (click)="hidden = true">toggle true</button>
-<button (click)="hidden = false">toggle false</button>
-{{ hidden }}
-<br>
-<button (click)="count = count + 1">Add one</button>
-<button (click)="count = count + 10">Add ten</button>
-<button (click)="count = 0">Reset </button>
-<button (click)="count = count - 1">Minus one</button>
-<button (click)="count = count - 10">Minus ten</button>
-<br>
-{{ count }}
- <p 
-  [hidden] = 'hidden'
- >{{ test1 }}</p>
- <p [hidden] = '!hidden'>{{ test2 }}</p>
+<div class="add-one-button">
+    <p>{{ title }}</p>
+    <button (click)="hidden = true">toggle true</button>
+    <button (click)="hidden = false">toggle false</button>
+    {{ hidden }}
+    <br>
+    <button (click)="count = count + 1">Add one</button>
+    <button (click)="count = count + 10">Add ten</button>
+    <button (click)="count = 0">Reset </button>
+    <button (click)="count = count - 1">Minus one</button>
+    <button (click)="count = count - 10">Minus ten</button>
+    <br>
+    {{ count }}
+    <p 
+    [hidden] = 'hidden'
+    >{{ test1 }}</p>
+    <p [hidden] = '!hidden'>{{ test2 }}</p>
+</div>

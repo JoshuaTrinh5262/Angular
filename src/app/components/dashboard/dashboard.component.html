@@ -1,0 +1,58 @@
+<div class="dashboard">
+<p>dashboard works!</p>
+<h2>Top Heroes</h2>
+
+<h2>S Rank Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of sHeroes" 
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
+
+<h2>A Rank Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of aHeroes" 
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
+
+<h2>B Rank Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of bHeroes" 
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
+
+<h2>C Rank Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of cHeroes" 
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
+
+<h2>D Rank Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of dHeroes" 
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
+
+<h2>E Rank Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of eHeroes" 
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+
+  <h2>F Rank Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of fHeroes" 
+    routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
