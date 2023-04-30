@@ -2,3 +2,39 @@
     padding-top: 5px;
     margin-top: 60px;
 }
+
+.card {
+    border-radius: 0.25rem;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0.25rem 0.75rem black;
+    margin-bottom: 5px;
+  }
+  
+  .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #1976d2;
+    border-bottom: 1px solid black;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  .card-text {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: #1976d2;
+    border-top: 1px solid black;
+  }
