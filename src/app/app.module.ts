@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CrisisListComponent } from './components/crisis-list/crisis-list.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
+import { HeroSearchComponent } from './components/hero-search/hero-search.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { InMemoryDataService } from './services/in-memory-data.service';
     DashboardComponent,
     HeaderComponent,
     FooterComponent,
-    CrisisListComponent
+    CrisisListComponent,
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,

@@ -24,6 +24,9 @@
       <label for="hero-rank">Hero Rank: </label>
       <input id="hero-rank" [(ngModel)]="hero.rank" placeholder="power">
     </div>
+    <div>
+      <button type="button" (click)="save()">Save</button>
+    </div>
 </div>
 <hero-messages></hero-messages>
-<button type="button" (click)="goBack()">go back</button>
+<button type="button" (click)="goBack()">So back</button>

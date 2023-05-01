@@ -1,3 +1,33 @@
+<div class="add-hero">
+  <div class="">
+    <label for="name">Hero name: </label>
+    <input id="name" #heroName />
+  </div>
+  <div class="">
+    <label for="age">Hero age: </label>
+    <input id="age" #heroAge />
+  </div>
+  <div class="">
+    <label for="new-hero-rank">Hero rank: </label>
+    <input id="new-hero-rank" #heroRank />
+  </div>
+  <div class="">
+    <label for="new-hero-power">Hero Power: </label>
+    <input id="new-hero-power" #heroPower />
+  </div>
+  <div class="">
+    <label for="squadId">Squad That Hero Belong To: </label>
+    <input id="squadId" #heroSquadId />
+  </div>
+  <div class="">
+    <label for="isSquadLeader">Hero Is Squad Leader </label>
+    <input id="isSquadLeader" #HeroIsSquadLeader value="false" disabled="disabled"/>
+  </div>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="add(heroName.value);">
+    Add hero
+  </button>
+</div>
 <div class="hero-list">
   <h2>My Heroes List</h2>
   <hero-messages></hero-messages>
@@ -7,6 +37,8 @@
         <span class="badge">{{hero.id}}</span>
         <span class="name">{{hero.name}}</span>
       </a>
+      <button type="button" class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
     </li>
   </ul>
 </div>
