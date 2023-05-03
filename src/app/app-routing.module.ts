@@ -10,6 +10,7 @@ import { SquadsComponent } from './components/squads/squads.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CrisisListComponent } from './components/crisis-list/crisis-list.component';
 import { HeroSearchComponent } from './components/hero-search/hero-search.component';
+import { HeroFormComponent } from './components/hero-form/hero-form.component';
 
 const routes: Routes = [
   { path: 'test', component: TestComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'hero-detail/:id', component: HeroDetailComponent },
   { path: 'hero-list', component: HeroesComponent },
   { path: 'hero-search', component: HeroSearchComponent },
+  { path: 'hero-form', component: HeroFormComponent },
   { path: 'crisis-list', component: CrisisListComponent },
   { path: 'squads', component: SquadsComponent },
   { path: 'dashboard', component: DashboardComponent },

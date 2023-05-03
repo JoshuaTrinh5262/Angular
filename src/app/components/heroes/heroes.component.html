@@ -28,17 +28,38 @@
     Add hero
   </button>
 </div>
-<div class="hero-list">
-  <h2>My Heroes List</h2>
-  <hero-messages></hero-messages>
-  <ul class="heroes">
-    <li *ngFor="let hero of heroes">
-      <a routerLink="/hero-detail/{{hero.id}}">
-        <span class="badge">{{hero.id}}</span>
-        <span class="name">{{hero.name}}</span>
-      </a>
-      <button type="button" class="delete" title="delete hero"
-      (click)="delete(hero)">x</button>
-    </li>
-  </ul>
+<div class="heroes-list">
+  <h3>CRISIS CENTER</h3>
+  <p>Get your crisis here</p>
+  <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Power</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Detail</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hero of heroes">
+          <td>{{ hero.id }}</td>
+          <td>{{ hero.name }}</td>
+          <td>{{ hero.power }}</td>
+          <td>{{ hero.age }}</td>
+          <td>{{ hero.gender }}</td>
+          <td>
+            <button>
+              <a routerLink="/hero-detail/{{hero.id}}">Detail</a>
+            </button>
+          </td>
+          <td><button type="button" class="delete" title="delete hero"
+            (click)="delete(hero)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+  </table>
 </div>
+

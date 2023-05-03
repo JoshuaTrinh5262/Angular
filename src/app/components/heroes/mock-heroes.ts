@@ -3,9 +3,9 @@ import { Hero } from './hero';
 export const HEROES: Hero[] = [
     {
         id: 1, 
-        name: 'A',
+        name: 'Anna Ashley',
         age: 21,
-        gender: 'Male',
+        gender: 'Female',
         power: 'A',
         rank: 'S',
         squadId: 1,

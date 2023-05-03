@@ -20,6 +20,7 @@ import { CrisisListComponent } from './components/crisis-list/crisis-list.compon
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { HeroSearchComponent } from './components/hero-search/hero-search.component';
+import { HeroFormComponent } from './components/hero-form/hero-form.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HeroSearchComponent } from './components/hero-search/hero-search.compon
     HeaderComponent,
     FooterComponent,
     CrisisListComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    HeroFormComponent,
   ],
   imports: [
     BrowserModule,

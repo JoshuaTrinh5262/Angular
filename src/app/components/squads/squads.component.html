@@ -1,1 +1,20 @@
-<p>squads works!</p>
+<div class="squads-list">
+    <h1>SQUAD CENTER</h1>
+    <p>Get your squads here</p>
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Squad Leader</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let squad of squads">
+            <td>{{ squad.id }}</td>
+            <td>{{ squad.name }}</td>
+            <td>{{ squad.leader }}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
