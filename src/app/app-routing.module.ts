@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'hero-search', component: HeroSearchComponent },
   { path: 'hero-form', component: HeroFormComponent },
   { path: 'crisis-list', component: CrisisListComponent },
-  { path: 'squads', component: SquadsComponent },
+  { path: 'squad-list', component: SquadsComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: '', component: MainComponent },
   { path: '**', component: PageNotFoundComponent},

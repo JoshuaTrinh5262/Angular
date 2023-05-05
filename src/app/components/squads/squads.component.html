@@ -7,13 +7,23 @@
             <th>ID</th>
             <th>Name</th>
             <th>Squad Leader</th>
+            <th>Detail</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let squad of squads">
-            <td>{{ squad.id }}</td>
-            <td>{{ squad.name }}</td>
-            <td>{{ squad.leader }}</td>
+            <td>{{ squad.squadId }}</td>
+            <td>{{ squad.squadName }}</td>
+            <td>{{ squad.squadLeader }}</td>
+            <td>
+              <button>
+                <a routerLink="/squad-detail/{{squad.squadId}}">Detail</a>
+              </button>
+            </td>
+            <td><button type="button" class="delete" title="delete squad"
+              (click)="delete(squad)">Delete</button>
+            </td>
           </tr>
         </tbody>
     </table>

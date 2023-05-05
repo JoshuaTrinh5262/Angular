@@ -13,4 +13,7 @@ export class SquadsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  delete(squad): void {
+
+  }
 }

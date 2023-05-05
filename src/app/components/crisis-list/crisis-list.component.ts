@@ -11,5 +11,10 @@ export class CrisisListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  delete(crisis): void {
+
   }
 }

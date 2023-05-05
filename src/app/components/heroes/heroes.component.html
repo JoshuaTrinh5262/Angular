@@ -1,44 +1,45 @@
 <div class="add-hero">
-  <div class="">
+  <div class="form-group">
     <label for="name">Hero name: </label>
     <input id="name" #heroName />
   </div>
-  <div class="">
+  <div class="form-group">
     <label for="age">Hero age: </label>
     <input id="age" #heroAge />
   </div>
-  <div class="">
+  <div class="form-group">
     <label for="new-hero-rank">Hero rank: </label>
-    <input id="new-hero-rank" #heroRank />
+    <input id="rank" #heroRank />
   </div>
-  <div class="">
-    <label for="new-hero-power">Hero Power: </label>
-    <input id="new-hero-power" #heroPower />
+  <div class="form-group">
+    <label for="power">Hero Power: </label>
+    <input id="power" #heroPower />
   </div>
-  <div class="">
+  <div class="form-group">
     <label for="squadId">Squad That Hero Belong To: </label>
     <input id="squadId" #heroSquadId />
   </div>
-  <div class="">
+  <div class="form-group">
     <label for="isSquadLeader">Hero Is Squad Leader </label>
     <input id="isSquadLeader" #HeroIsSquadLeader value="false" disabled="disabled"/>
   </div>
   <!-- (click) passes input value to add() and then clears the input -->
-  <button type="button" class="add-button" (click)="add(heroName.value);">
-    Add hero
-  </button>
+  <button type="button" class="add-button" (click)="add(heroName.value);">Add hero</button>
 </div>
+
 <div class="heroes-list">
-  <h3>CRISIS CENTER</h3>
-  <p>Get your crisis here</p>
+  <h3>HEROES CENTER</h3>
+  <p>Get your hero list here</p>
   <table>
       <thead>
         <tr>
           <th>ID</th>
           <th>Name</th>
           <th>Power</th>
+          <td>Rank</td>
           <th>Age</th>
           <th>Gender</th>
+          <th>Squad</th>
           <th>Detail</th>
           <th>Delete</th>
         </tr>
@@ -48,8 +49,10 @@
           <td>{{ hero.id }}</td>
           <td>{{ hero.name }}</td>
           <td>{{ hero.power }}</td>
+          <td>{{ hero.rank }}</td>
           <td>{{ hero.age }}</td>
           <td>{{ hero.gender }}</td>
+          <td>{{ hero.squadId }}</td>
           <td>
             <button>
               <a routerLink="/hero-detail/{{hero.id}}">Detail</a>

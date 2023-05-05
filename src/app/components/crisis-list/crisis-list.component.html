@@ -9,6 +9,8 @@
             <th>Description</th>
             <th>Location</th>
             <th>Status</th>
+            <th>Detail</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -18,6 +20,14 @@
             <td>{{ crisis.description }}</td>
             <td>{{ crisis.location }}</td>
             <td>{{ crisis.status }}</td>
+            <td>
+              <button>
+                <a routerLink="/crisis-detail/{{crisis.id}}">Detail</a>
+              </button>
+            </td>
+            <td><button type="button" class="delete" title="delete crisis"
+              (click)="delete(crisis)">Delete</button>
+            </td>
           </tr>
         </tbody>
     </table>
