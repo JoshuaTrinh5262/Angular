@@ -1,4 +1,4 @@
-<div class="hero-detail" *ngIf="hero">
+<div class="container hero-detail" *ngIf="hero">
     <h1>Hero {{hero.name | uppercase}} Detail</h1>
     <div><span>id: </span>{{hero.id}}</div>
     <div>
@@ -29,4 +29,4 @@
     </div>
 </div>
 <app-messages></app-messages>
-<button type="button" (click)="goBack()">Go back</button>
+<button type="button" class="goback" (click)="goBack()">Go back</button>

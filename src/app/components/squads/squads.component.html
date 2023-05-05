@@ -1,4 +1,4 @@
-<div class="squads-list">
+<div class="container">
     <h1>SQUAD CENTER</h1>
     <p>Get your squads here</p>
     <table>
@@ -7,8 +7,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Squad Leader</th>
-            <th>Detail</th>
-            <th>Delete</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -20,11 +19,11 @@
               <button>
                 <a routerLink="/squad-detail/{{squad.squadId}}">Detail</a>
               </button>
-            </td>
-            <td><button type="button" class="delete" title="delete squad"
-              (click)="delete(squad)">Delete</button>
+              <button type="button" class="delete" title="delete squad"
+                (click)="delete(squad)">Delete</button>
             </td>
           </tr>
         </tbody>
     </table>
+    <button class="goback" (click)="goBack()">Go Back</button>
   </div>

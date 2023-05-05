@@ -1,5 +1,5 @@
-<div class="crisis-list">
-    <h3>CRISIS CENTER</h3>
+<div class="container">
+    <h1>CRISIS CENTER</h1>
     <p>Get your crisis here</p>
     <table>
         <thead>
@@ -9,8 +9,7 @@
             <th>Description</th>
             <th>Location</th>
             <th>Status</th>
-            <th>Detail</th>
-            <th>Delete</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -24,11 +23,10 @@
               <button>
                 <a routerLink="/crisis-detail/{{crisis.id}}">Detail</a>
               </button>
-            </td>
-            <td><button type="button" class="delete" title="delete crisis"
-              (click)="delete(crisis)">Delete</button>
+              <button type="button" class="delete" title="delete crisis" (click)="delete(crisis)">Delete</button>
             </td>
           </tr>
         </tbody>
     </table>
+    <button class="goback" (click)="goBack()">Go Back</button>
 </div>

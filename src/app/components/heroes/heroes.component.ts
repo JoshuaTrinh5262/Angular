@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Hero } from '../heroes/hero';
 import { HeroService } from 'src/app/services/hero.service';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-heroes',
@@ -9,9 +10,11 @@ import { HeroService } from 'src/app/services/hero.service';
 })
 export class HeroesComponent {
   heroes: Hero[] = [];
+  isHiddenOn = true;
 
   constructor(
     private heroService: HeroService,
+    private navigationServe: NavigationService
   ) { }
 
   ngOnInit(): void {
@@ -20,6 +23,10 @@ export class HeroesComponent {
 
   getHeroes(): void {
     this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
+  }
+
+  toggle() {
+    this.isHiddenOn = !this.isHiddenOn;
   }
 
   add(name: string): void {
@@ -35,5 +42,8 @@ export class HeroesComponent {
     this.heroes = this.heroes.filter(h => h !== hero);
     this.heroService.deleteHero(hero.id).subscribe();
   }
-  
+
+  goBack() {
+    this.navigationServe.goBack();
+  }
 }

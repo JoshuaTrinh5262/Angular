@@ -11,8 +11,13 @@ import { MessageService } from 'src/app/services/message.service';
 })
 export class HeroFormComponent {
 
-  powers = ['Really Smart', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
+  powers = [
+    'Really Smart',
+    'Telekinesis',
+    'Super Flexible',
+    'Super Hot',
+    'Weather Changer'
+  ];
   ranks = ['S', 'A', 'B', 'C', 'D', 'E', 'F'];
   squads = SQUADS.map(squad => squad.squadId);
 

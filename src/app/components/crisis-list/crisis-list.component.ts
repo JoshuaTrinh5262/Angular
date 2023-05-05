@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CRISIS } from './mock-crisis';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-crisis-list',
@@ -8,7 +9,9 @@ import { CRISIS } from './mock-crisis';
 })
 export class CrisisListComponent implements OnInit {
   crises = CRISIS;
-  constructor() { }
+  constructor(
+    private navigationService: NavigationService
+  ) { }
 
   ngOnInit(): void {
 
@@ -16,5 +19,9 @@ export class CrisisListComponent implements OnInit {
 
   delete(crisis): void {
 
+  }
+
+  goBack(): void {
+    this.navigationService.goBack();
   }
 }
