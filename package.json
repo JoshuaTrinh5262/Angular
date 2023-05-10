@@ -7,7 +7,14 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +49,10 @@
     "protractor": "^7.0.0",
     "ts-node": "^10.9.1",
     "tslint": "~6.1.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "axios": "^0.21",
+    "laravel-mix": "^6.0.6",
+    "lodash": "^4.17.19",
+    "postcss": "^8.1.14"
   }
 }
