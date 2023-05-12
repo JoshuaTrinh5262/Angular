@@ -21,7 +21,6 @@ const routes: Routes = [
   { path: 'hero-form', component: HeroFormComponent },
   { path: 'crisis-list', component: CrisisListComponent },
   { path: 'squad-list', component: SquadsComponent },
-  { path: 'dashboard', component: DashboardComponent },
   { path: '', component: MainComponent },
   { path: '**', component: PageNotFoundComponent},
   { path: 'page-not-found', component: PageNotFoundComponent },
